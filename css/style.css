@@ -41,6 +41,8 @@ html {
 }
 
 .sidebar-user>p {
+    display: flex;   /*  NEEDS FIXING  */
+    align-items: center;
     padding: 4px;
 }
 
@@ -53,12 +55,15 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
+    height: 100vh;
 }
 
 .header-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    z-index: 1;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .searchbar-profile-container {
@@ -98,8 +103,57 @@ html {
     font-size: 1.4rem;
 }
 
-
 #smallPP {
     border-radius: 100%;
 }
 
+.welcome-interact-container {
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.welcome-text-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.welcome-text-container > p {
+    margin-left: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.submit-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.submit-buttons input {
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 7rem;
+    background-color: #1992d4;
+    color: #ffff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: .2s ease-in-out 0s;
+}
+
+.submit-buttons input:hover {
+    transform: scale(1.1);
+    background: #faae1c;
+    color: #000;
+}
+
+.main-page-container {
+    background-color: #e2e8f0;
+}
