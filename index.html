@@ -1,62 +1,193 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-        <main class="main-container">
-            <div class="sidebar-container">
-                <p> <img src="/svg/view-dashboard.svg" height="42px" width="42px"> Dashboard</p>
-                <div class="sidebar-user">
-                    <p> <img src="/svg/home-outline.svg" height="32px" width="32px"> Home</p>
-                    <p> <img src="/svg/account-circle-outline.svg" height="32px" width="32px"> Profile</p>
-                    <p> <img src="/svg/message-outline.svg" height="32px" width="32px"> Messages</p>
-                    <p> <img src="/svg/history.svg" height="32px" width="32px"> History</p>
-                    <p> <img src="/svg/calendar-check-outline.svg" height="32px" width="32px"> Tasks</p>
-                    <p> <img src="/svg/account-group-outline.svg" height="32px" width="32px"> Communities</p>
-                </div>
-                <div class="sidebar-settings">
-                    <p>Settings</p>
-                    <p>Support</p>
-                    <p>Privacy</p>
-                </div>
-            </div>
-            <div class="main-content-container">
-                <header class="header-container">
-                    <div class="searchbar-profile-container">
-                        <div class="searchbar-container">
-                            <img src="/svg/magnify.svg" height="32px" width="32px">
-                            <input type="text" id="search" name="search">
-                        </div>
-                        <div class="notification-profile-container">
-                            <img src="/svg/bell-ring-outline.svg" height="32px" width="32px">
-                            <img src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png" height="64px" width="64px" id="smallPP">
-                            <p>User Name</p>
-                        </div>
-                    </div>
-                    <div class="welcome-interact-container">
-                        <div class="welcome-text-container">
-                            <img src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png" height="94px"
-                            width="94px" id="smallPP">
-                            <p>hi there, <br> User Name (@Username)</p>
-                        </div>
-                        <div class="submit-buttons">
-                            <input type="button" id="new" name="new" value="New">
-                            <input type="button" id="upload" name="upload" value="Upload">
-                            <input type="button" id="share" new="share" value="Share">
-                        </div>
-                    </div>
-                </header>
-                <div class="main-page-container">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="sidebar-container">
+            <p> <img src="/svg/view-dashboard.svg" height="42px" width="42px"> Dashboard</p>
+            <div class="sidebar-user">
+                <p> <img src="/svg/home-outline.svg" height="32px" width="32px"> Home</p>
+                <p> <img src="/svg/account-circle-outline.svg" height="32px" width="32px"> Profile</p>
+                <p> <img src="/svg/message-outline.svg" height="32px" width="32px"> Messages</p>
+                <p> <img src="/svg/history.svg" height="32px" width="32px"> History</p>
+                <p> <img src="/svg/calendar-check-outline.svg" height="32px" width="32px"> Tasks</p>
+                <p> <img src="/svg/account-group-outline.svg" height="32px" width="32px"> Communities</p>
+            </div>
+            <div class="sidebar-settings">
+                <p> <img src="/svg/cog-outline.svg" height="32px" width="32px">Settings</p>
+                <p> <img src="/svg/lifebuoy.svg" height="32px" width="32px">Support</p>
+                <p> <img src="/svg/shield-check-outline.svg" height="32px" width="32px">Privacy</p>
+            </div>
+        </div>
+        <div class="main-content-container">
+            <header class="header-container">
+                <div class="searchbar-profile-container">
+                    <div class="searchbar-container">
+                        <img src="/svg/magnify.svg" height="32px" width="32px">
+                        <input type="text" id="search" name="search">
+                    </div>
+                    <div class="notification-profile-container">
+                        <img src="/svg/bell-ring-outline.svg" height="32px" width="32px">
+                        <img src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png"
+                            height="64px" width="64px" id="smallPP">
+                        <p>User Name</p>
+                    </div>
+                </div>
+                <div class="welcome-interact-container">
+                    <div class="welcome-text-container">
+                        <img src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png"
+                            height="94px" width="94px" id="smallPP">
+                        <p>hi there, <br> User Name (@Username)</p>
+                    </div>
+                    <div class="submit-buttons">
+                        <input type="button" id="new" name="new" value="New">
+                        <input type="button" id="upload" name="upload" value="Upload">
+                        <input type="button" id="share" new="share" value="Share">
+                    </div>
+                </div>
+            </header>
+            <div class="main-page-container">
+                <div class="projects-container">
+                    <p>Your Projects</p>
+                    <div class="project-card-container">
+                        <div class="project-card">
+                            <h3>Super Cool Project</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum ratione libero ab,
+                                assumenda voluptatem.</p>
+                            <div class="project-settings">
+                                <img src="/svg/star-plus-outline.svg" height="32px" width="32px">
+                                <img src="/svg/delete-outline.svg" height="32px" width="32px">
+                                <img src="/svg/share-variant-outline.svg" height="32px" width="32px">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Less Cool Project</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur rem dolor
+                                dignissimos minima voluptatibus nemo harum, eligendi voluptatum modi iure.</p>
+                            <div class="project-settings">
+                                <img src="/svg/star-plus-outline.svg" height="32px" width="32px">
+                                <img src="/svg/delete-outline.svg" height="32px" width="32px">
+                                <img src="/svg/share-variant-outline.svg" height="32px" width="32px">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Impossible Project</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis totam commodi est enim
+                                praesentium doloribus iusto ducimus quo porro reiciendis accusantium, nisi in aliquid
+                                doloremque?</p>
+                            <div class="project-settings">
+                                <img src="/svg/star-plus-outline.svg" height="32px" width="32px">
+                                <img src="/svg/delete-outline.svg" height="32px" width="32px">
+                                <img src="/svg/share-variant-outline.svg" height="32px" width="32px">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Easy Peasy App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime asperiores
+                                exercitationem nam possimus odit necessitatibus.</p>
+                            <div class="project-settings">
+                                <img src="/svg/star-plus-outline.svg" height="32px" width="32px">
+                                <img src="/svg/delete-outline.svg" height="32px" width="32px">
+                                <img src="/svg/share-variant-outline.svg" height="32px" width="32px">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Ad Blocker</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolor esse voluptas odit
+                                ipsa quas ratione quod cupiditate?</p>
+                            <div class="project-settings">
+                                <img src="/svg/star-plus-outline.svg" height="32px" width="32px">
+                                <img src="/svg/delete-outline.svg" height="32px" width="32px">
+                                <img src="/svg/share-variant-outline.svg" height="32px" width="32px">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Money Maker</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, error!</p>
+                            <div class="project-settings">
+                                <img src="/svg/star-plus-outline.svg" height="32px" width="32px">
+                                <img src="/svg/delete-outline.svg" height="32px" width="32px">
+                                <img src="/svg/share-variant-outline.svg" height="32px" width="32px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-container">
+                    <div class="announcements-container">
+                        <h3>Announcements</h3>
+                        <div class="announcements">
+                            <div class="announcements-content">
+                                <h4>Site Maintenance</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, repellat!</p>
+                            </div>
+                            <div class="announcements-content">
+                                <h4>Community Share Day</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quaerat quos
+                                        ipsum.</p>
+                            </div>
+                            <div class="announcements-content">
+                                <h4>Update Privacy Policy</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni amet veniam
+                                        suscipit accusamus deleniti!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-container">
+                        <h3>Trending</h3>
+                        <div class="popular-profiles">
+                            <div class="profiles-col-one">
+                                <div class="profiles">
+                                    <img src="https://i.pinimg.com/originals/8f/95/6c/8f956c318729c34174adbfd4febe47c9.jpg"
+                                        height="64px" width="64px">
+                                    <div>
+                                        <p>@tegan</p>
+                                        <p>World Peace Builder</p>
+                                    </div>
+                                </div>
+                                <div class="profiles">
+                                    <img src="https://i.pinimg.com/280x280_RS/ce/0a/f9/ce0af9cada707ed8dba100050f41bfcc.jpg"
+                                        height="64px" width="64px">
+                                    <div>
+                                        <p>@morgan</p>
+                                        <p>Super Cool Builder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profiles-col-two">
+                                <div class="profiles">
+                                    <img src="https://www.kindpng.com/picc/m/405-4059497_random-profile-picture-for-steam-hd-png-download.png"
+                                        height="64px" width="64px">
+                                    <div>
+                                        <p>@alex</p>
+                                        <p>Money Maker</p>
+                                    </div>
+                                </div>
+                                <div class="profiles">
+                                    <img src="https://www.pngitem.com/pimgs/m/263-2630243_random-image-from-user-cute-pixel-art-eyes.png"
+                                        height="64px" width="64px">
+                                    <div>
+                                        <p>@kendall</p>
+                                        <p>Game Changer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-        <script src="js/script.js" async defer></script>
-    </body>
+        </div>
+    </main>
+    <script src="js/script.js" async defer></script>
+</body>
+
 </html>
